@@ -1,0 +1,30 @@
+Framework Parity Comparison Report
+==================================================
+NumPy params file: results/numpy_model_params.npz
+Test samples:      114
+
+Max absolute diff:  5.551115e-17
+Mean absolute diff: 1.401470e-18
+Result:             PASS  (threshold < 1e-6)
+
+Per-sample differences (first 20):
+  Sample   0: numpy=0.00002912  pytorch=0.00002912  diff=0.00e+00
+  Sample   1: numpy=0.99964888  pytorch=0.99964888  diff=0.00e+00
+  Sample   2: numpy=0.00624755  pytorch=0.00624755  diff=8.67e-19
+  Sample   3: numpy=0.70509179  pytorch=0.70509179  diff=0.00e+00
+  Sample   4: numpy=0.00000112  pytorch=0.00000112  diff=2.12e-22
+  Sample   5: numpy=0.98435366  pytorch=0.98435366  diff=0.00e+00
+  Sample   6: numpy=0.99951676  pytorch=0.99951676  diff=0.00e+00
+  Sample   7: numpy=0.00106369  pytorch=0.00106369  diff=0.00e+00
+  Sample   8: numpy=0.00212155  pytorch=0.00212155  diff=0.00e+00
+  Sample   9: numpy=0.00000046  pytorch=0.00000046  diff=5.29e-23
+  Sample  10: numpy=0.99142586  pytorch=0.99142586  diff=0.00e+00
+  Sample  11: numpy=0.11910852  pytorch=0.11910852  diff=1.39e-17
+  Sample  12: numpy=0.99852250  pytorch=0.99852250  diff=0.00e+00
+  Sample  13: numpy=0.00068888  pytorch=0.00068888  diff=1.08e-19
+  Sample  14: numpy=0.00309565  pytorch=0.00309565  diff=0.00e+00
+  Sample  15: numpy=0.84393113  pytorch=0.84393113  diff=0.00e+00
+  Sample  16: numpy=0.13253693  pytorch=0.13253693  diff=0.00e+00
+  Sample  17: numpy=0.40977992  pytorch=0.40977992  diff=0.00e+00
+  Sample  18: numpy=0.99889218  pytorch=0.99889218  diff=0.00e+00
+  Sample  19: numpy=0.84530051  pytorch=0.84530051  diff=0.00e+00

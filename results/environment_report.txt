@@ -1,0 +1,24 @@
+Environment Report
+==================================================
+Generated     : 2026-11-19 23:16:39
+OS            : Windows 11 (AMD64)
+Python        : 3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]
+
+Package Versions
+--------------------------------------------------
+NumPy         : 2.3.5
+PyTorch       : 2.13.0+cpu
+scikit-learn  : 1.9.0
+Matplotlib    : 3.10.8
+
+PyTorch / CUDA
+--------------------------------------------------
+CUDA available: False
+GPU           : Not available (CPU mode)
+CPU fallback  : Active
+
+Reproducibility
+--------------------------------------------------
+NumPy seed    : 42
+PyTorch seed  : 42
+sklearn split : random_state=42, stratified=True
