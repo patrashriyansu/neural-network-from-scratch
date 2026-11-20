@@ -1,5 +1,10 @@
 # Neural Network from Scratch
 
+[![CI](https://github.com/patrashriyansu/neural-network-from-scratch/actions/workflows/ci.yml/badge.svg)](https://github.com/patrashriyansu/neural-network-from-scratch/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
+![Tests](https://img.shields.io/badge/tests-39%20passed-brightgreen)
+![License](https://img.shields.io/badge/license-Educational-lightgrey)
+
 > **A complete implementation of a neural network built twice — manually with NumPy and equivalently with PyTorch — applied to real-world binary classification.**
 
 ---

@@ -117,11 +117,19 @@ class NeuralNetwork:
         -------
         ndarray, same shape, values in (0, 1)
         """
-        return np.where(
-            z >= 0,
-            1.0 / (1.0 + np.exp(-z)),
-            np.exp(z) / (1.0 + np.exp(z))
-        )
+        # np.where evaluates BOTH branches before selecting, which causes
+        # overflow RuntimeWarnings at extreme values even though the result
+        # is correct. We suppress by clipping the exp argument instead.
+        z = np.asarray(z, dtype=np.float64)
+        pos_mask = z >= 0
+        result = np.empty_like(z)
+        # For z >= 0: safe to compute exp(-z) (always in [0, 1])
+        result[pos_mask]  = 1.0 / (1.0 + np.exp(-z[pos_mask]))
+        # For z < 0: exp(z) stays small, no overflow
+        neg_z = z[~pos_mask]
+        exp_z = np.exp(neg_z)
+        result[~pos_mask] = exp_z / (1.0 + exp_z)
+        return result
 
     def sigmoid_derivative(self, z):
         """

@@ -1,15 +1,63 @@
+# ── Python ──────────────────────────────────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 *.pyo
 *.pyd
-.Python
+*.so
+*.egg
 *.egg-info/
 dist/
 build/
-.env
+.eggs/
+
+# ── Virtual environments ─────────────────────────────────────────────────────
 venv/
 env/
-*.npz
-!results/*.npz
+.venv/
+.env/
+ENV/
+
+# ── Environment files ────────────────────────────────────────────────────────
+.env
+.env.local
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Testing / coverage ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ── Type checkers ────────────────────────────────────────────────────────────
+.mypy_cache/
+.pytype/
+
+# ── IDE / editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS artefacts ─────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# ── Generated results (keep the directory, ignore binary/generated files) ───
+results/*.npz
+results/*.png
+# Keep text reports in git so reviewers can read them without running code
+!results/gradient_check.txt
+!results/framework_comparison.txt
+!results/environment_report.txt
+!results/train_output.txt
+
+# ── Scratch / temp ───────────────────────────────────────────────────────────
+generate_env_report.py
+*.tmp
+*.bak
